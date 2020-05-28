@@ -1,3 +1,36 @@
-* {
-    border: 2px solid grey;
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1r 1fr 1fr 1fr 1fr;
+}
+
+#nested-grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
+    border: 2px solid red;
+    grid-gap: 10px;
+}
+
+.photoBox {
+    width: 200px;
+    height: 200px;
+    border: 2px solid green;
+    background: yellow;
+}
+
+#one {
+    background-color: pink;
+}
+
+#two {
+    background-color: purple;
+}
+
+#three {
+    background-color: aquamarine;
+}
+
+#four {
+    background-color: burlywood;
 }
