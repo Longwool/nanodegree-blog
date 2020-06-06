@@ -1,3 +1,99 @@
-* {
-    border: 1px solid black;
-}
+                                                                                                                                            .wrapper {
+                                                                                                                                                border: 1px solid black;
+                                                                                                                                                display: grid;
+                                                                                                                                                grid-gap: 10px;
+                                                                                                                                                grid-template-areas: "header" "content" "footer";
+                                                                                                                                                width: 100%;
+                                                                                                                                                background-color: yellow;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            .header {
+                                                                                                                                                border: 1px solid green;
+                                                                                                                                                text-align: center;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            .card-container {
+                                                                                                                                                display: grid;
+                                                                                                                                                grid-template-areas: "content";
+                                                                                                                                                width: 50%;
+                                                                                                                                                justify-content: center;
+                                                                                                                                                margin: auto;
+                                                                                                                                                grid-gap: 15px;
+                                                                                                                                                border: 2px solid black;
+                                                                                                                                                background-color: red;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            .card {
+                                                                                                                                                display: flex;
+                                                                                                                                                flex-direction: column;
+                                                                                                                                                width: 320px;
+                                                                                                                                                height: 380px;
+                                                                                                                                                background: white;
+                                                                                                                                                border-radius: 5px;
+                                                                                                                                                padding: 10px;
+                                                                                                                                                border: 2px solid black;
+                                                                                                                                                box-shadow: 0px 10px 10px grey;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            img {
+                                                                                                                                                width: 100%;
+                                                                                                                                                border-radius: 5px;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            .topic {
+                                                                                                                                                margin: auto;
+                                                                                                                                                text-align: center;
+                                                                                                                                                margin-top: 20px;
+                                                                                                                                                font-family: 'Arial';
+                                                                                                                                                font-size: 20px;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            p {
+                                                                                                                                                text-align: center;
+                                                                                                                                                padding-left: 30px;
+                                                                                                                                                padding-right: 30px;
+                                                                                                                                                font-family: 'Open Sans', sans-serif;
+                                                                                                                                                font-size: 14px;
+                                                                                                                                                color: #C8C8C8;
+                                                                                                                                                line-height: 16px;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            .button {
+                                                                                                                                                background-color: turquoise;
+                                                                                                                                                color: white;
+                                                                                                                                                width: 90px;
+                                                                                                                                                padding: 10px 10px;
+                                                                                                                                                border-radius: 3px;
+                                                                                                                                                text-align: center;
+                                                                                                                                                text-decoration: none;
+                                                                                                                                                display: block;
+                                                                                                                                                margin: 20px auto;
+                                                                                                                                                font-size: 12px;
+                                                                                                                                                cursor: pointer;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            .ft-upper {
+                                                                                                                                                border: 1px solid black;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            .ft-lower {
+                                                                                                                                                border: 1px solid green;
+                                                                                                                                            }
+                                                                                                                                            /*.footer {
+                                                                                                                                                display: flex;
+                                                                                                                                                flex-direction: row;
+                                                                                                                                                border: 1px solid blue;
+                                                                                                                                                width: 100%;
+                                                                                                                                                background: #222;
+                                                                                                                                                padding: 20px 0px;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            ul {
+                                                                                                                                                display: flex;
+                                                                                                                                                align-items: stretch;
+                                                                                                                                                justify-content: space-between;
+                                                                                                                                                width: 100%;
+                                                                                                                                                background: #cacaca;
+                                                                                                                                                margin: 0;
+                                                                                                                                                padding: 0;
+                                                                                                                                            }*/
