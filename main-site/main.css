@@ -2,14 +2,24 @@
                                                                                                                                                 border: 1px solid black;
                                                                                                                                                 display: grid;
                                                                                                                                                 grid-gap: 10px;
-                                                                                                                                                grid-template-areas: "header" "content" "footer";
+                                                                                                                                                justify-content: center;
+                                                                                                                                                grid-area: "header" "content" "footer";
                                                                                                                                                 width: 100%;
-                                                                                                                                                background-color: yellow;
                                                                                                                                             }
                                                                                                                                             
                                                                                                                                             .header {
-                                                                                                                                                border: 1px solid green;
-                                                                                                                                                text-align: center;
+                                                                                                                                                grid-template-areas: "header";
+                                                                                                                                                display: flex;
+                                                                                                                                                justify-content: space-around;
+                                                                                                                                                align-items: center;
+                                                                                                                                                padding: 2em;
+                                                                                                                                                border-radius: 4px;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            .header h1 {
+                                                                                                                                                font-family: 'Times New Roman', Times, serif;
+                                                                                                                                                font-size: 2.5em;
+                                                                                                                                                padding: 10px;
                                                                                                                                             }
                                                                                                                                             
                                                                                                                                             .card-container {
@@ -19,8 +29,6 @@
                                                                                                                                                 justify-content: center;
                                                                                                                                                 margin: auto;
                                                                                                                                                 grid-gap: 15px;
-                                                                                                                                                border: 2px solid black;
-                                                                                                                                                background-color: red;
                                                                                                                                             }
                                                                                                                                             
                                                                                                                                             .card {
@@ -59,7 +67,7 @@
                                                                                                                                             }
                                                                                                                                             
                                                                                                                                             .button {
-                                                                                                                                                background-color: turquoise;
+                                                                                                                                                background-color: #34eb58;
                                                                                                                                                 color: white;
                                                                                                                                                 width: 90px;
                                                                                                                                                 padding: 10px 10px;
@@ -72,28 +80,17 @@
                                                                                                                                                 cursor: pointer;
                                                                                                                                             }
                                                                                                                                             
-                                                                                                                                            .ft-upper {
-                                                                                                                                                border: 1px solid black;
+                                                                                                                                            footer {
+                                                                                                                                                display: flex;
+                                                                                                                                                justify-content: space-around;
+                                                                                                                                                align-items: center;
+                                                                                                                                                padding: 2em;
+                                                                                                                                                border-radius: 4px;
                                                                                                                                             }
                                                                                                                                             
-                                                                                                                                            .ft-lower {
-                                                                                                                                                border: 1px solid green;
-                                                                                                                                            }
-                                                                                                                                            /*.footer {
-                                                                                                                                                display: flex;
-                                                                                                                                                flex-direction: row;
-                                                                                                                                                border: 1px solid blue;
-                                                                                                                                                width: 100%;
-                                                                                                                                                background: #222;
-                                                                                                                                                padding: 20px 0px;
+                                                                                                                                            .green {
+                                                                                                                                                background: green;
+                                                                                                                                                width: 50%;
                                                                                                                                             }
                                                                                                                                             
-                                                                                                                                            ul {
-                                                                                                                                                display: flex;
-                                                                                                                                                align-items: stretch;
-                                                                                                                                                justify-content: space-between;
-                                                                                                                                                width: 100%;
-                                                                                                                                                background: #cacaca;
-                                                                                                                                                margin: 0;
-                                                                                                                                                padding: 0;
-                                                                                                                                            }*/
+                                                                                                                                            ;
