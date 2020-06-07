@@ -1,96 +1,144 @@
-                                                                                                                                            .wrapper {
-                                                                                                                                                border: 1px solid black;
-                                                                                                                                                display: grid;
-                                                                                                                                                grid-gap: 10px;
-                                                                                                                                                justify-content: center;
-                                                                                                                                                grid-area: "header" "content" "footer";
-                                                                                                                                                width: 100%;
-                                                                                                                                            }
-                                                                                                                                            
-                                                                                                                                            .header {
-                                                                                                                                                grid-template-areas: "header";
-                                                                                                                                                display: flex;
-                                                                                                                                                justify-content: space-around;
-                                                                                                                                                align-items: center;
-                                                                                                                                                padding: 2em;
-                                                                                                                                                border-radius: 4px;
-                                                                                                                                            }
-                                                                                                                                            
-                                                                                                                                            .header h1 {
-                                                                                                                                                font-family: 'Times New Roman', Times, serif;
-                                                                                                                                                font-size: 2.5em;
-                                                                                                                                                padding: 10px;
-                                                                                                                                            }
-                                                                                                                                            
-                                                                                                                                            .card-container {
-                                                                                                                                                display: grid;
-                                                                                                                                                grid-template-areas: "content";
-                                                                                                                                                width: 50%;
-                                                                                                                                                justify-content: center;
-                                                                                                                                                margin: auto;
-                                                                                                                                                grid-gap: 15px;
-                                                                                                                                            }
-                                                                                                                                            
-                                                                                                                                            .card {
-                                                                                                                                                display: flex;
-                                                                                                                                                flex-direction: column;
-                                                                                                                                                width: 320px;
-                                                                                                                                                height: 380px;
-                                                                                                                                                background: white;
-                                                                                                                                                border-radius: 5px;
-                                                                                                                                                padding: 10px;
-                                                                                                                                                border: 2px solid black;
-                                                                                                                                                box-shadow: 0px 10px 10px grey;
-                                                                                                                                            }
-                                                                                                                                            
-                                                                                                                                            img {
-                                                                                                                                                width: 100%;
-                                                                                                                                                border-radius: 5px;
-                                                                                                                                            }
-                                                                                                                                            
-                                                                                                                                            .topic {
-                                                                                                                                                margin: auto;
-                                                                                                                                                text-align: center;
-                                                                                                                                                margin-top: 20px;
-                                                                                                                                                font-family: 'Arial';
-                                                                                                                                                font-size: 20px;
-                                                                                                                                            }
-                                                                                                                                            
-                                                                                                                                            p {
-                                                                                                                                                text-align: center;
-                                                                                                                                                padding-left: 30px;
-                                                                                                                                                padding-right: 30px;
-                                                                                                                                                font-family: 'Open Sans', sans-serif;
-                                                                                                                                                font-size: 14px;
-                                                                                                                                                color: #C8C8C8;
-                                                                                                                                                line-height: 16px;
-                                                                                                                                            }
-                                                                                                                                            
-                                                                                                                                            .button {
-                                                                                                                                                background-color: #34eb58;
-                                                                                                                                                color: white;
-                                                                                                                                                width: 90px;
-                                                                                                                                                padding: 10px 10px;
-                                                                                                                                                border-radius: 3px;
-                                                                                                                                                text-align: center;
-                                                                                                                                                text-decoration: none;
-                                                                                                                                                display: block;
-                                                                                                                                                margin: 20px auto;
-                                                                                                                                                font-size: 12px;
-                                                                                                                                                cursor: pointer;
-                                                                                                                                            }
-                                                                                                                                            
-                                                                                                                                            footer {
-                                                                                                                                                display: flex;
-                                                                                                                                                justify-content: space-around;
-                                                                                                                                                align-items: center;
-                                                                                                                                                padding: 2em;
-                                                                                                                                                border-radius: 4px;
-                                                                                                                                            }
-                                                                                                                                            
-                                                                                                                                            .green {
-                                                                                                                                                background: green;
-                                                                                                                                                width: 50%;
-                                                                                                                                            }
-                                                                                                                                            
-                                                                                                                                            ;
+.wrapper {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-areas: "header" "nav" "content" "sidebar" "ad" "footer";
+}
+
+.header {
+    grid-area: header;
+    background-color: #7cbd1e;
+    border-radius: 15px 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em;
+}
+
+.main-nav {
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1em;
+}
+
+.main-nav img {
+    border-radius: 60px;
+    max-width: 100px;
+}
+
+.content {
+    display: grid;
+    grid-area: content;
+    justify-content: center;
+    margin: auto;
+    grid-gap: 15px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 380px;
+    background: #fcf9f9;
+    border-radius: 5px;
+    padding: 10px;
+    border: 2px solid #7cbd1e;
+    box-shadow: 0px 10px 10px grey;
+}
+
+img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.topic {
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Arial';
+    font-size: 20px;
+}
+
+p {
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #C8C8C8;
+    line-height: 16px;
+}
+
+.button {
+    background-color: #bceb3c;
+    color: white;
+    width: 90px;
+    padding: 10px 10px;
+    border-radius: 3px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: 20px auto;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.side {
+    grid-area: sidebar;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 3px solid #7cbd1e;
+    border-radius: 5px;
+}
+
+.advertising {
+    grid-area: ad;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em;
+    background-color: #f1f864;
+    margin-top: 20px;
+}
+
+@media (min-width: 500px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    .wrapper {
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas: "header header" "nav nav" "sidebar content" "ad ad" "footer footer";
+    }
+    nav {
+        background-color: #7cbd1e;
+        border-radius: 50px 15px;
+    }
+}
+
+@media (min-width: 700px) {
+    h1 {
+        font-size: 3rem;
+    }
+    .wrapper {
+        grid-template-columns: 2fr 4fr 2fr;
+        grid-template-areas: "header header header header" "nav content sidebar sidebar" "nav content ad ad" "footer footer footer footer"
+    }
+    nav {
+        background-color: #7cbd1e;
+        border-radius: 30px;
+    }
+    .main-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+}
