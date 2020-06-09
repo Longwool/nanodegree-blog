@@ -1,3 +1,33 @@
-* {
-    border: 1px solid red;
+.wrapper {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-areas: "header" "top" "article" "bottom" "footer";
+}
+
+.header {
+    grid-area: header;
+    background-color: #7cbd1e;
+    border-radius: 0 60px 0 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em;
+    font-family: 'Poppins', 'Arial', sans-serif;
+    color: #444;
+}
+
+.author-info {
+    border: 2px solid orange;
+}
+
+.current-post {
+    border: 2px solid purple;
+}
+
+.other-posts {
+    border: 2px solid blue;
+}
+
+.social-links {
+    border: 2px solid yellow;
 }
