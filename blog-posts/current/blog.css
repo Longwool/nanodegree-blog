@@ -6,7 +6,7 @@
 
 .header {
     grid-area: header;
-    background-color: #7cbd1e;
+    background-color: #649d66;
     border-radius: 0 60px 0 60px;
     display: flex;
     justify-content: space-around;
@@ -17,17 +17,42 @@
 }
 
 .author-info {
-    border: 2px solid orange;
+    grid-area: top;
+    background-color: rgba(200, 150, 79, 5);
+}
+
+.author-info h1 {
+    text-align: center;
+}
+
+.author-info img {
+    max-width: 100px;
+    margin-left: 20px;
 }
 
 .current-post {
-    border: 2px solid purple;
+    grid-area: article;
+    text-align: center;
+    font-family: 'Arial';
+    font-size: 1em;
+}
+
+.subsection img {
+    width: 100%;
+    height: auto;
+}
+
+blockquote {
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 1.5em;
 }
 
 .other-posts {
-    border: 2px solid blue;
+    grid-area: bottom;
+    background-color: #f6d743;
 }
 
-.social-links {
-    border: 2px solid yellow;
+.footer {
+    grid-area: footer;
+    background-color: #649d66;
 }
