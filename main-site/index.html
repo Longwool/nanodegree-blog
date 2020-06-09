@@ -83,16 +83,13 @@
             <div class="copyright">
                 <small>&copy; Copyright 2020, Laura Cordey</small>
             </div>
-            <div id="newsletter">
-                <form>
-                    <fieldset>
-                        <legend>Sign up for our newsletter:</legend>
-                        <label for="firstname">Name:</label><br>
-                        <input type="text" name="name" value="name"><br><br>
-                        <label for="email">Email address:</label><br>
-                        <input type="text" name="email" value="email"><br><br>
-                        <input type="submit" value="Submit">
-                    </fieldset>
+            <div>
+                <form class="form-inline" action="/action_page.php">
+                    <label for="name">Name:</label>
+                    <input type="name" id="name" placeholder="Enter email" name="email">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter password" name="pswd">
+                    <button type="submit">Subscribe</button>
                 </form>
             </div>
         </footer>

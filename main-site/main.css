@@ -70,7 +70,7 @@ p {
 }
 
 .button {
-    background-color: #bceb3c;
+    background-color: #06623b;
     color: white;
     width: 90px;
     padding: 10px 10px;
@@ -80,17 +80,19 @@ p {
     display: block;
     margin: 20px auto;
     font-size: 12px;
+    font-family: 'Arial';
     cursor: pointer;
 }
 
 .aside-left {
     grid-area: sidebar;
-    border: 1px solid grey;
+    border: 2px solid #7cbd1e;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    border: 3px solid #7cbd1e;
     border-radius: 5px;
+    box-shadow: 0px 10px 10px grey;
+    font-size: 3em;
 }
 
 
@@ -109,7 +111,10 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    border: 2px solid green;
+    border: 2px solid #7cbd1e;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px grey;
+    /*margin-right: 20px;*/
 }
 
 .footer {
@@ -122,11 +127,56 @@ p {
     margin-top: 20px;
 }
 
-fieldset {
-    border: 2px solid grey;
-    border-radius: 20px;
-    padding: 20px;
+.copyright {
+    font-family: 'Arial';
+    color: #444;
 }
+
+
+/* Style the form - display items horizontally */
+
+.form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    font-family: 'Arial';
+}
+
+
+/* Add some margins for each label */
+
+.form-inline label {
+    margin: 5px 10px 5px 0;
+    color: #444;
+}
+
+
+/* Style the input fields */
+
+.form-inline input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+
+/* Style the submit button */
+
+.form-inline button {
+    padding: 10px 20px;
+    background-color: #06623b;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+
+/*.form-inline button:hover {
+    background-color: #7cbd1e;
+}*/
 
 @media (min-width: 500px) {
     h1 {
@@ -148,7 +198,7 @@ fieldset {
     }
     .wrapper {
         grid-template-columns: 2fr 2fr 2fr;
-        border: 3px solid orange;
+        /*border: 3px solid orange;*/
         grid-template-areas: "header header header" "nav nav nav" "sidebar content ad" "footer footer footer"
     }
     nav {
@@ -158,5 +208,18 @@ fieldset {
     .main-nav {
         flex-direction: column;
         align-items: center;
+    }
+}
+
+
+/* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
+
+@media (max-width: 800px) {
+    .form-inline input {
+        margin: 10px 0;
+    }
+    .form-inline {
+        flex-direction: column;
+        align-items: stretch;
     }
 }
