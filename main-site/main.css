@@ -7,24 +7,23 @@
 .header {
     grid-area: header;
     background-color: #7cbd1e;
-    border-radius: 15px 50px;
+    border-radius: 0 60px 0 60px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 2em;
+    font-family: 'Poppins', 'Arial', sans-serif;
+    color: #444;
 }
 
 .main-nav {
     grid-area: nav;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 1em;
 }
 
-.main-nav img {
-    border-radius: 60px;
-    max-width: 100px;
+li {
+    display: inline;
+    font-family: 'Arial';
+    font-size: 1rem;
 }
 
 .content {
@@ -84,7 +83,7 @@ p {
     cursor: pointer;
 }
 
-.side {
+.aside-left {
     grid-area: sidebar;
     border: 1px solid grey;
     display: flex;
@@ -94,11 +93,23 @@ p {
     border-radius: 5px;
 }
 
+
+/*.aside-right {
+    grid-area: ;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 3px solid #7cbd1e;
+    border-radius: 5px;
+}*/
+
 .advertising {
     grid-area: ad;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    border: 2px solid green;
 }
 
 .footer {
@@ -121,7 +132,7 @@ p {
     }
     nav {
         background-color: #7cbd1e;
-        border-radius: 50px 15px;
+        border-radius: 15px;
     }
 }
 
@@ -130,8 +141,9 @@ p {
         font-size: 3rem;
     }
     .wrapper {
-        grid-template-columns: 2fr 4fr 2fr;
-        grid-template-areas: "header header header header" "nav content sidebar sidebar" "nav content ad ad" "footer footer footer footer"
+        grid-template-columns: 2fr 2fr 2fr;
+        border: 3px solid orange;
+        grid-template-areas: "header header header" "nav nav nav" "sidebar content ad" "footer footer footer"
     }
     nav {
         background-color: #7cbd1e;
