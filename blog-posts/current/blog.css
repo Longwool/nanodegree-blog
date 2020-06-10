@@ -18,15 +18,20 @@
 
 .author-info {
     grid-area: top;
-    background-color: rgba(200, 150, 79, 5);
+    padding: 20px;
+    color: #444;
+    border-radius: 30px 0 60px 60px;
+    border: 4px solid rgba(162, 131, 170, 1);
+    /*background-color: rgba(162, 131, 170, 1);*/
 }
 
-.author-info h1 {
-    text-align: center;
+.author-info h2 {
+    text-align: left;
 }
 
 .author-info img {
     max-width: 100px;
+    height: auto;
     margin-left: 20px;
 }
 
@@ -37,9 +42,14 @@
     font-size: 1em;
 }
 
+.current-post h3 {
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 1.5em;
+}
+
 .subsection img {
     width: 100%;
-    height: auto;
+    max-height: 20%;
 }
 
 blockquote {
@@ -55,4 +65,47 @@ blockquote {
 .footer {
     grid-area: footer;
     background-color: #649d66;
+}
+
+.social {
+    background-color: #649d66;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "older home newer" "social-lt social-mid social-rt" "subscribe subscribe subscribe";
+}
+
+.older-posts {
+    grid-area: older;
+    border: 0.5px solid black;
+}
+
+.home-btn {
+    grid-area: home;
+    border: 0.5px solid black;
+}
+
+.newer-posts {
+    grid-area: newer;
+    border: 0.5px solid black;
+}
+
+.social-left {
+    grid-area: social-lt;
+    border: 0.5px solid black;
+}
+
+.social-mid {
+    grid-area: social-mid;
+    border: 0.5px solid black;
+}
+
+.social-right {
+    grid-area: social-rt;
+    border: 0.5px solid black;
+}
+
+.subscribe-btn {
+    grid-area: subscribe;
+    border: 0.5px solid black;
 }
