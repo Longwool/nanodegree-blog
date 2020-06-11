@@ -75,7 +75,7 @@ p {
     color: white;
     width: 90px;
     padding: 10px 10px;
-    border-radius: 3px;
+    border-radius: 5px;
     text-align: center;
     text-decoration: none;
     display: block;
@@ -94,18 +94,8 @@ p {
     border-radius: 5px;
     box-shadow: 0px 10px 10px grey;
     font-size: 3em;
+    background-color: #FFF;
 }
-
-
-/*.aside-right {
-    grid-area: ;
-    border: 1px solid grey;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    border: 3px solid #7cbd1e;
-    border-radius: 5px;
-}*/
 
 .advertising {
     grid-area: ad;
@@ -115,6 +105,26 @@ p {
     border: 2px solid #7cbd1e;
     border-radius: 5px;
     box-shadow: 0px 10px 10px grey;
+}
+
+.top-ad {
+    background-color: #FFF;
+}
+
+.upper-mid {
+    background-color: #FFF;
+}
+
+.mid-ad {
+    background-color: #FFF;
+}
+
+.lower-mid {
+    background-color: #FFF;
+}
+
+.bottom-ad {
+    background-color: #FFF;
 }
 
 .footer {
@@ -209,7 +219,7 @@ p {
 
 /* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
 
-@media (max-width: 800px) {
+@media (max-width: 700px) {
     .form-inline input {
         margin: 10px 0;
     }

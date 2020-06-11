@@ -22,6 +22,7 @@
     background-repeat: repeat-x;
     background-position: right top;
     background-attachment: fixed;
+    border-radius: 5px;
     font-size: 3em;
 }
 
@@ -62,11 +63,6 @@ blockquote {
     text-align: center;
 }
 
-.other-posts {
-    grid-area: bottom;
-    background-color: #f6d743;
-}
-
 .footer {
     grid-area: footer;
     background-color: #649d66;
@@ -78,6 +74,10 @@ blockquote {
     grid-template-columns: 2fr 2fr 2fr;
     grid-template-rows: 1fr 2fr 2fr;
     grid-template-areas: "older home newer" "social-lt social-mid social-rt" ". subscribe .";
+}
+
+.other-posts {
+    background-color: #f6d743;
 }
 
 .btn {
@@ -96,12 +96,15 @@ blockquote {
 
 .subscribe {
     grid-area: subscribe;
-    padding: 10px 20px;
+    padding: 12px 25px 7px 25px;
     background-color: #649d66;
-    border: 1px solid #ddd;
-    border-radius: 20px;
+    border-radius: 5px;
     color: white;
     cursor: pointer;
     justify-self: center;
     max-height: 30%;
+    font-size: 16px;
+    font-family: Arial;
+    text-align: center;
+    justify-content: center;
 }
