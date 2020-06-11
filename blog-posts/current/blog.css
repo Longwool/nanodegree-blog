@@ -18,7 +18,15 @@
 
 .topic {
     grid-area: topic;
-    border: 1px solid blue;
+    background-image: url("../img/wildflowers.jpg");
+    background-repeat: repeat-x;
+    background-position: right top;
+    background-attachment: fixed;
+    font-size: 3em;
+}
+
+.topic p {
+    visibility: hidden;
 }
 
 .author-info {
