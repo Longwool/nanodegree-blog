@@ -1,7 +1,7 @@
 .wrapper {
     display: grid;
     grid-gap: 15px;
-    grid-template-areas: "header" "top" "article" "bottom" "footer";
+    grid-template-areas: "header" "topic" "author" "article" "footer";
 }
 
 .header {
@@ -16,45 +16,42 @@
     color: #444;
 }
 
+.topic {
+    grid-area: topic;
+    border: 1px solid blue;
+}
+
 .author-info {
-    grid-area: top;
-    padding: 20px;
-    color: #444;
-    border-radius: 30px 0 60px 60px;
-    border: 4px solid rgba(162, 131, 170, 1);
-    /*background-color: rgba(162, 131, 170, 1);*/
+    grid-area: author;
+    border: 2px solid black;
 }
 
-.author-info h2 {
-    text-align: left;
-}
-
-.author-info img {
-    max-width: 100px;
-    height: auto;
-    margin-left: 20px;
+hr {
+    border: 2px solid #06623b;
 }
 
 .current-post {
     grid-area: article;
-    text-align: center;
+    text-align: justify;
     font-family: 'Arial';
     font-size: 1em;
 }
 
 .current-post h3 {
-    font-family: Verdana, Tahoma, sans-serif;
-    font-size: 1.5em;
+    font-family: 'Arial';
+    font-size: 2em;
+    text-align: center;
 }
 
 .subsection img {
-    width: 100%;
-    max-height: 20%;
+    width: 50%;
+    max-height: 10%;
 }
 
 blockquote {
-    font-family: Verdana, Tahoma, sans-serif;
-    font-size: 1.5em;
+    font-family: 'Arial';
+    font-size: 2em;
+    text-align: center;
 }
 
 .other-posts {
@@ -68,44 +65,35 @@ blockquote {
 }
 
 .social {
-    background-color: #649d66;
+    background-color: white;
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "older home newer" "social-lt social-mid social-rt" "subscribe subscribe subscribe";
+    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-areas: "older home newer" "social-lt social-mid social-rt" ". subscribe .";
 }
 
-.older-posts {
-    grid-area: older;
-    border: 0.5px solid black;
+.btn {
+    border: none;
+    background-color: white;
+    color: #444;
+    padding: 14px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
 }
 
-.home-btn {
-    grid-area: home;
-    border: 0.5px solid black;
+.btn:hover {
+    background-color: #f6d743;
 }
 
-.newer-posts {
-    grid-area: newer;
-    border: 0.5px solid black;
-}
-
-.social-left {
-    grid-area: social-lt;
-    border: 0.5px solid black;
-}
-
-.social-mid {
-    grid-area: social-mid;
-    border: 0.5px solid black;
-}
-
-.social-right {
-    grid-area: social-rt;
-    border: 0.5px solid black;
-}
-
-.subscribe-btn {
+.subscribe {
     grid-area: subscribe;
-    border: 0.5px solid black;
+    padding: 10px 20px;
+    background-color: #649d66;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    justify-self: center;
+    max-height: 30%;
 }

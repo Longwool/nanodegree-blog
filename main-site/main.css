@@ -79,7 +79,7 @@ p {
     text-align: center;
     text-decoration: none;
     display: block;
-    margin: 20px auto;
+    margin: auto;
     font-size: 12px;
     font-family: 'Arial';
     cursor: pointer;
@@ -173,11 +173,6 @@ p {
     color: white;
     cursor: pointer;
 }
-
-
-/*.form-inline button:hover {
-    background-color: #7cbd1e;
-}*/
 
 @media (min-width: 500px) {
     h1 {
