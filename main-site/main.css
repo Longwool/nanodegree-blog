@@ -24,11 +24,26 @@
 .main-nav ul {
     display: flex;
     justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
     list-style: none;
-    padding-left: 25px;
-    padding-right: 25px;
     font-family: Arial;
     color: #444;
+}
+
+.main-nav li a {
+    border: none;
+    background-color: inherit;
+    color: #444;
+    padding: 14px;
+    font-size: 20px;
+    cursor: pointer;
+    display: inline-flex;
+    text-decoration: none;
+}
+
+.main-nav a:hover {
+    color: white;
 }
 
 .content {
@@ -112,7 +127,8 @@ p {
 }
 
 .advertising div {
-    border: 1px solid #f6d743;
+    border-bottom: 2px solid #f6d743;
+    border-top: 2px solid #f6d743;
     padding: 10px;
     margin: 10px;
 }
@@ -153,7 +169,7 @@ p {
 
 /* Style the form - display items horizontally */
 
-.form-inline {
+#form-inline {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -163,7 +179,7 @@ p {
 
 /* Add some margins for each label */
 
-.form-inline label {
+#form-inline label {
     margin: 5px 10px 5px 0;
     color: #444;
 }
@@ -171,7 +187,7 @@ p {
 
 /* Style the input fields */
 
-.form-inline input {
+#form-inline input {
     vertical-align: middle;
     margin: 5px 10px 5px 0;
     padding: 10px;
@@ -182,7 +198,7 @@ p {
 
 /* Style the submit button */
 
-.form-inline button {
+#form-inline button {
     padding: 10px 15px;
     margin: 20px;
     background-color: #06623b;
@@ -228,10 +244,10 @@ p {
 /* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
 
 @media (max-width: 700px) {
-    .form-inline input {
+    #form-inline input {
         margin: 10px 0px;
     }
-    .form-inline {
+    #form-inline {
         flex-direction: column;
         align-items: stretch;
     }

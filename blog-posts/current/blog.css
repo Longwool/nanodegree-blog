@@ -76,6 +76,9 @@ blockquote {
     grid-template-areas: "older home newer" "social-lt social-mid social-rt" ". subscribe .";
 }
 
+
+/*what is this?*/
+
 .other-posts {
     background-color: #f6d743;
 }
