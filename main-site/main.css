@@ -70,7 +70,7 @@ p {
     padding-right: 30px;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-    color: #C8C8C8;
+    color: #666;
     line-height: 16px;
 }
 
@@ -111,11 +111,13 @@ p {
     box-shadow: 0px 10px 10px grey;
 }
 
-.top-ad {
-    background-color: #FFF;
+.advertising div {
+    border: 1px solid #f6d743;
+    padding: 10px;
+    margin: 10px;
 }
 
-.upper-mid {
+.top-ad {
     background-color: #FFF;
 }
 
@@ -145,6 +147,7 @@ p {
     font-family: 'Arial';
     color: #444;
     padding-right: 30px;
+    padding-top: 50px;
 }
 
 
@@ -180,7 +183,8 @@ p {
 /* Style the submit button */
 
 .form-inline button {
-    padding: 10px 20px;
+    padding: 10px 15px;
+    margin: 20px;
     background-color: #06623b;
     border: 1px solid #ddd;
     border-radius: 20px;
@@ -225,7 +229,7 @@ p {
 
 @media (max-width: 700px) {
     .form-inline input {
-        margin: 10px 0;
+        margin: 10px 0px;
     }
     .form-inline {
         flex-direction: column;
