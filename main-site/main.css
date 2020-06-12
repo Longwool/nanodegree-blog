@@ -16,19 +16,19 @@
     color: #444;
 }
 
-
-/*this is the messed up navbar*/
-
 .main-nav {
     grid-area: nav;
-    display: flex;
     background-color: #649d66;
 }
 
-ul {
+.main-nav ul {
+    display: flex;
+    justify-content: space-between;
     list-style: none;
-    font-family: 'Arial';
-    font-size: 1rem;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-family: Arial;
+    color: #444;
 }
 
 .content {
