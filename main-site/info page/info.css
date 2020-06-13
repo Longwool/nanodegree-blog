@@ -47,7 +47,7 @@
     color: white;
 }
 
-#news {
+#events {
     display: grid;
     grid-area: content;
     justify-content: center;
