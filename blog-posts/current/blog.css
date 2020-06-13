@@ -1,3 +1,7 @@
+body {
+    font-family: 'Roboto', 'Arial', sans-serif;
+}
+
 .wrapper {
     display: grid;
     grid-gap: 15px;
@@ -12,7 +16,6 @@
     justify-content: space-around;
     align-items: center;
     padding: 2em;
-    font-family: 'Poppins', 'Arial', sans-serif;
     color: #444;
 }
 
@@ -52,7 +55,6 @@
     border: 2px solid #444;
     border-radius: 5px;
     padding: 20px;
-    font-family: Arial;
     font-size: 1em;
     line-height: 1.4em;
 }
@@ -64,13 +66,11 @@ hr {
 .current-post {
     grid-area: article;
     text-align: justify;
-    font-family: 'Arial';
     font-size: 1em;
     line-height: 1.1em;
 }
 
 .current-post h3 {
-    font-family: 'Arial';
     font-size: 2em;
     text-align: center;
 }
@@ -81,7 +81,6 @@ hr {
 }
 
 blockquote {
-    font-family: 'Arial';
     font-size: 2em;
     text-align: center;
 }
@@ -108,7 +107,6 @@ blockquote {
 .links a {
     text-decoration: none;
     color: #444;
-    font-family: Arial;
     font-size: 1em;
 }
 
@@ -139,7 +137,6 @@ blockquote {
     border: 1px solid #06623b;
     border-radius: 5px;
     font-size: 16px;
-    font-family: Arial;
     text-align: center;
     display: block;
 }

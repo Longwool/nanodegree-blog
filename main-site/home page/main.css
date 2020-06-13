@@ -1,3 +1,7 @@
+body {
+    font-family: 'Roboto', 'Arial', sans-serif;
+}
+
 .wrapper {
     display: grid;
     grid-gap: 15px;
@@ -12,7 +16,6 @@
     justify-content: space-around;
     align-items: center;
     padding: 2em;
-    font-family: 'Poppins', 'Arial', sans-serif;
     color: #444;
 }
 
@@ -21,15 +24,20 @@
     background-color: #649d66;
 }
 
+
+/* style main nav */
+
 .main-nav ul {
     display: flex;
     justify-content: space-between;
     padding: 10px;
     margin: 10px;
     list-style: none;
-    font-family: Arial;
     color: #444;
 }
+
+
+/* style main nav links */
 
 .main-nav li a {
     border: none;
@@ -42,9 +50,15 @@
     text-decoration: none;
 }
 
+
+/* make link white when cursor hovers */
+
 .main-nav a:hover {
     color: white;
 }
+
+
+/* style blog card container */
 
 .content {
     display: grid;
@@ -53,6 +67,9 @@
     margin: auto;
     grid-gap: 15px;
 }
+
+
+/* style each blog card */
 
 .card {
     display: flex;
@@ -66,28 +83,38 @@
     box-shadow: 0px 10px 10px grey;
 }
 
+
+/* set size and border for card img */
+
 img {
     width: 100%;
     border-radius: 5px;
 }
 
+
+/* style topic text on blog card */
+
 .topic {
     margin: auto;
     text-align: center;
     margin-top: 20px;
-    font-family: 'Arial';
     font-size: 20px;
 }
+
+
+/* style descriptive text on blog card */
 
 p {
     text-align: center;
     padding-left: 30px;
     padding-right: 30px;
-    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     color: #666;
     line-height: 16px;
 }
+
+
+/* style btn on blog card */
 
 .btn-one,
 .btn-two,
@@ -102,9 +129,11 @@ p {
     display: block;
     margin: auto;
     font-size: 12px;
-    font-family: 'Arial';
     cursor: pointer;
 }
+
+
+/* aside section on left of main page */
 
 .aside-left {
     grid-area: sidebar;
@@ -117,6 +146,9 @@ p {
     font-size: 3em;
     background-color: #FFF;
 }
+
+
+/* aside section on right of main page */
 
 .advertising {
     grid-area: ad;
@@ -151,6 +183,9 @@ p {
     background-color: #FFF;
 }
 
+
+/* main page footer */
+
 .footer {
     grid-area: footer;
     display: flex;
@@ -161,25 +196,26 @@ p {
     margin-top: 20px;
 }
 
+
+/* author copyright */
+
 .copyright {
-    font-family: 'Arial';
     color: #444;
     padding-right: 30px;
     padding-top: 50px;
 }
 
 
-/* Style the form - display items horizontally */
+/* style form - display items horizontally */
 
 #newsletter {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    font-family: 'Arial';
 }
 
 
-/* Add some margins for each label */
+/* margins for each label */
 
 #newsletter label {
     margin: 5px 10px 5px 0;
@@ -187,7 +223,7 @@ p {
 }
 
 
-/* Style the input fields */
+/* style input fields */
 
 #newsletter input {
     vertical-align: middle;
@@ -198,7 +234,7 @@ p {
 }
 
 
-/* Style the submit button */
+/* style submit button */
 
 #newsletter button {
     padding: 10px 15px;
@@ -243,7 +279,7 @@ p {
 }
 
 
-/* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
+/* display the form controls vertically instead of horizontally on screens that are less than 800px wide */
 
 @media (max-width: 700px) {
     #newsletter input {
