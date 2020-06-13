@@ -205,7 +205,7 @@ p {
     margin: 20px;
     background-color: #06623b;
     border: 1px solid #ddd;
-    border-radius: 20px;
+    border-radius: 5px;
     color: white;
     cursor: pointer;
 }
@@ -246,10 +246,10 @@ p {
 /* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
 
 @media (max-width: 700px) {
-    #form-inline input {
+    #newsletter input {
         margin: 10px 0px;
     }
-    #form-inline {
+    #newsletter {
         flex-direction: column;
         align-items: stretch;
     }

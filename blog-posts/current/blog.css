@@ -16,6 +16,23 @@
     color: #444;
 }
 
+.avatar {
+    display: inline-flex;
+}
+
+.avatar p {
+    padding: 30px 0 0 20px;
+}
+
+.avatar img {
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 20px;
+    border: 2px solid #06623b;
+}
+
 .topic {
     grid-area: topic;
     background-image: url("../img/wildflowers.jpg");
@@ -32,7 +49,12 @@
 
 .author-info {
     grid-area: author;
-    border: 2px solid black;
+    border: 2px solid #444;
+    border-radius: 5px;
+    padding: 20px;
+    font-family: Arial;
+    font-size: 1em;
+    line-height: 1.4em;
 }
 
 hr {
@@ -44,6 +66,7 @@ hr {
     text-align: justify;
     font-family: 'Arial';
     font-size: 1em;
+    line-height: 1.1em;
 }
 
 .current-post h3 {
@@ -112,10 +135,10 @@ blockquote {
     grid-area: subscribe;
     cursor: pointer;
     justify-self: center;
-    padding: 12px 16px;
+    padding: 10px 10px;
+    border: 1px solid #06623b;
+    border-radius: 5px;
     font-size: 16px;
-    border: 1px solid #444;
-    border-radius: 0 60px 0 60px;
     font-family: Arial;
     text-align: center;
     display: block;
@@ -127,5 +150,5 @@ blockquote {
 }
 
 .subscribe:hover {
-    background-color: #649d66;
+    background-color: #f6d743;
 }
