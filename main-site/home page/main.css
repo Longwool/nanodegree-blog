@@ -171,7 +171,7 @@ p {
 
 /* Style the form - display items horizontally */
 
-#form-inline {
+#newsletter {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -181,7 +181,7 @@ p {
 
 /* Add some margins for each label */
 
-#form-inline label {
+#newsletter label {
     margin: 5px 10px 5px 0;
     color: #444;
 }
@@ -189,7 +189,7 @@ p {
 
 /* Style the input fields */
 
-#form-inline input {
+#newsletter input {
     vertical-align: middle;
     margin: 5px 10px 5px 0;
     padding: 10px;
@@ -200,7 +200,7 @@ p {
 
 /* Style the submit button */
 
-#form-inline button {
+#newsletter button {
     padding: 10px 15px;
     margin: 20px;
     background-color: #06623b;

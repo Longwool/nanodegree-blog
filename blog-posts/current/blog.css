@@ -65,49 +65,67 @@ blockquote {
 
 .footer {
     grid-area: footer;
-    background-color: #649d66;
 }
 
-.social {
-    background-color: white;
+.links {
     display: grid;
+    background-color: #FFF;
     grid-template-columns: 2fr 2fr 2fr;
-    grid-template-rows: 1fr 2fr 2fr;
-    grid-template-areas: "older home newer" "social-lt social-mid social-rt" ". subscribe .";
+    grid-template-rows: 2fr 2fr 2fr;
+    grid-template-areas: "posts posts posts" ". social-mid ." ". subscribe .";
 }
 
-
-/*what is this?*/
-
-.other-posts {
-    background-color: #f6d743;
+.posts {
+    grid-area: posts;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
 }
 
-.btn {
-    border: none;
-    background-color: white;
+.links a {
+    text-decoration: none;
     color: #444;
-    padding: 14px;
-    font-size: 16px;
-    cursor: pointer;
-    display: inline-block;
+    font-family: Arial;
+    font-size: 1em;
 }
 
-.btn:hover {
-    background-color: #f6d743;
+.posts a:hover {
+    border-bottom: 2px solid #06623b;
+}
+
+.social-icons {
+    grid-area: social-mid;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fa {
+    color: #444;
+}
+
+.fa:hover {
+    color: #06623b;
 }
 
 .subscribe {
     grid-area: subscribe;
-    padding: 12px 25px 7px 25px;
-    background-color: #649d66;
-    border-radius: 5px;
-    color: white;
     cursor: pointer;
     justify-self: center;
-    max-height: 30%;
+    padding: 12px 16px;
     font-size: 16px;
+    border: 1px solid #444;
+    border-radius: 0 60px 0 60px;
     font-family: Arial;
     text-align: center;
-    justify-content: center;
+    display: block;
+}
+
+.subscribe a {
+    text-decoration: none;
+    color: #444;
+}
+
+.subscribe:hover {
+    background-color: #649d66;
 }
