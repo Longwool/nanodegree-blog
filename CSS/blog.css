@@ -38,7 +38,7 @@ body {
 
 .topic {
     grid-area: topic;
-    background-image: url("../img/wildflowers.jpg");
+    background-image: url("../assets/img/wildflowers.jpg");
     background-repeat: repeat-x;
     background-position: right top;
     background-attachment: fixed;
