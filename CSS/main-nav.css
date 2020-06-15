@@ -1,0 +1,37 @@
+.main-nav {
+    grid-area: nav;
+    background-color: #649d66;
+}
+
+
+/* style main nav */
+
+.main-nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+    list-style: none;
+    color: #444;
+}
+
+
+/* style main nav links */
+
+.main-nav li a {
+    border: none;
+    background-color: inherit;
+    color: #444;
+    padding: 14px;
+    font-size: 20px;
+    cursor: pointer;
+    display: inline-flex;
+    text-decoration: none;
+}
+
+
+/* make link white when cursor hovers */
+
+.main-nav a:hover {
+    color: white;
+}
